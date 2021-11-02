@@ -413,7 +413,7 @@ library Address {
         // and 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 is returned
         // for accounts without code, i.e. `keccak256('')`
         bytes32 codehash;
-        bytes32 accountHash = 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470;
+        bytes32 accountHash = 0x1ec6cd64af776bce44b5c1c8b69fe300eaedcd7c036444c1f468bd195e6d801c;
         // solhint-disable-next-line no-inline-assembly
         assembly {
             codehash := extcodehash(account)

@@ -1,30 +1,30 @@
 {
 	"compiler": {
-		"version": "0.5.16+commit.9c3226ce"
+		"version": "0.6.12+commit.27d51765"
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			}
-		],
+		"abi": [],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"build/tokens/BTCBToken.sol": "Context"
+			"build/tokens/SAFEMOONToken.sol": "Context"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": true,
 			"runs": 200
@@ -32,11 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"build/tokens/BTCBToken.sol": {
-			"keccak256": "0x7407f590b21c003c520bd2f622075739ab17cdf43f4a819a3878706900a62b66",
+		"build/tokens/SAFEMOONToken.sol": {
+			"keccak256": "0xe7c895f383f0c9d43a1f9f100687bb8709845d6de09ec2577e3c45972134c16c",
+			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://16b228ba81f17b71c5494a9d45d81f375dc861f983b46ffb571bc4f47139c645",
-				"dweb:/ipfs/Qmawe7BAsfZY92p9a8uAcajGgE14wwZRo4J6yFhNUdZb5V"
+				"bzz-raw://f807812e7a634c23685f96e2a4db5085bfe53a2bafb9750bbe299c387d62f72a",
+				"dweb:/ipfs/QmSqF84zRMJLma8xLAFfnz7Lb4G2tGVQz9Qi7V8X668Xz8"
 			]
 		}
 	},

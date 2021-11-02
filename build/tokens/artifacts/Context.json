@@ -37,6 +37,7 @@
 			"sourceMap": ""
 		},
 		"deployedBytecode": {
+			"immutableReferences": {},
 			"linkReferences": {},
 			"object": "",
 			"opcodes": "",
@@ -45,12 +46,5 @@
 		"gasEstimates": null,
 		"methodIdentifiers": {}
 	},
-	"abi": [
-		{
-			"inputs": [],
-			"payable": false,
-			"stateMutability": "nonpayable",
-			"type": "constructor"
-		}
-	]
+	"abi": []
 }

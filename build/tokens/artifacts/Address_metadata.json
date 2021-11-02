@@ -1,21 +1,25 @@
 {
 	"compiler": {
-		"version": "0.6.6+commit.6c089d02"
+		"version": "0.6.12+commit.27d51765"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [],
 		"devdoc": {
 			"details": "Collection of functions related to the address type",
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"build/tokens/BAKEToken.sol": "Address"
+			"build/tokens/SAFEMOONToken.sol": "Address"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -29,11 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"build/tokens/BAKEToken.sol": {
-			"keccak256": "0x72641ce726ebf0e592de90435a189807525cffdd76d6677c8e61cb7cdc677aac",
+		"build/tokens/SAFEMOONToken.sol": {
+			"keccak256": "0xe7c895f383f0c9d43a1f9f100687bb8709845d6de09ec2577e3c45972134c16c",
+			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://707508244b4347f60bdae0c3542d00a22077fc08a89395bb4736649f39b10a0c",
-				"dweb:/ipfs/QmWizrAL1RKWNEJhgqFNkLj1K1PU5sueN6yF4TVwNUCZZd"
+				"bzz-raw://f807812e7a634c23685f96e2a4db5085bfe53a2bafb9750bbe299c387d62f72a",
+				"dweb:/ipfs/QmSqF84zRMJLma8xLAFfnz7Lb4G2tGVQz9Qi7V8X668Xz8"
 			]
 		}
 	},
