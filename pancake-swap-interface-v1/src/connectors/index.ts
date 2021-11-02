@@ -31,6 +31,21 @@ export const injected = new InjectedConnector({
 export const bscConnector = new BscConnector({ supportedChainIds: [97] })
 
 
+// mainnet only
+export const walletconnect = new WalletConnectConnector({
+  rpc: { [NETWORK_CHAIN_ID]: NETWORK_URL },
+  bridge: 'https://bridge.walletconnect.org',
+  qrcode: true,
+  pollingInterval: 15000,
+})
+
+// mainnet only
+export const walletlink = new WalletLinkConnector({
+  url: NETWORK_URL,
+  appName: 'Uniswap',
+  appLogoUrl:
+    'https://mpng.pngfly.com/20181202/bex/kisspng-emoji-domain-unicorn-pin-badges-sticker-unicorn-tumblr-emoji-unicorn-iphoneemoji-5c046729264a77.5671679315437924251569.jpg',
+})
 
 export const connectorsByName: { [connectorName in ConnectorNames]: any } = {
   [ConnectorNames.Injected]: injected,
