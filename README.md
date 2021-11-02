@@ -1,31 +1,41 @@
+## Create workspace folder
+
+```
+mkdir pancake-swap-testnet
+cd pancake-swap-testnet
+```
+
 
 ## Preparing source
 
 - Clone `pancake-swap-core`
 ```
-git clone git@github.com:pancakeswap/pancake-swap-core.git
+git clone https://github.com/dariuszo/pancake-swap-core.git
 cd pancake-swap-core
 git checkout -b factory 3b214306770e86bc3a64e67c2b5bdb566b4e94a7
 yarn install
 yarn compile
+cd ..
 ```
 
 - Clone `pancake-swap-periphery`
 ```
-git clone git@github.com:pancakeswap/pancake-swap-periphery.git
+git clone https://github.com/dariuszo/pancake-swap-periphery.git
 cd pancake-swap-periphery
 git checkout -b router d769a6d136b74fde82502ec2f9334acc1afc0732
 yarn install
 yarn add @uniswap/v2-core@"file:../pancake-swap-core"
 yarn compile
+cd ..
 ```
 
 - Clone `pancake-swap-interface-v1`
 ```
-git clone git@github.com:pancakeswap/pancake-swap-interface-v1.git
+git clone https://github.com/dariuszo/pancake-swap-interface-v1.git
 cd pancake-swap-interface-v1
 git checkout -b v1 0257017f2daaae2f67c24ded70b5829f74a01b3c
 yarn install
+cd ..
 ```
 
 
@@ -33,7 +43,7 @@ yarn install
 
 ### Install contract merger: https://www.npmjs.com/package/sol-merger
 ```
-npm install sol-merger -g
+npm install -g sol-merger
 ```
 
 ### Prepare `PancakeFactory` and `PancakeRouter`
@@ -44,13 +54,13 @@ sol-merger pancake-swap-periphery/contracts/PancakeRouter01.sol ./build
 sol-merger pancake-swap-periphery/contracts/PancakeRouter.sol ./build
 ```
 
-### Deploy `PancakeFactory` and `PancakeRouter`
+### Deploy `WBNB`, `PancakeFactory` and `PancakeRouter`
 
 - Access: https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.5.16+commit.9c3226ce.js
 
 #### Deploy WBNB
 
-+ New File: `WBNB.sol` => Copy source from https://gist.github.com/nhancv/b0b35f16472e4998d0fd17b7a1e4f707
++ New File: `WBNB.sol` => Copy source from https://gist.github.com/dariuszo/ec8b72adcad32fb991cf00cb4a98781a
 + Compiler tab => Select compiler: `v0.8.3+commit.8d00100c`
 + Deploy tab => Select `WBNB` -> Deploy
 
