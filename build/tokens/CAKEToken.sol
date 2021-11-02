@@ -1,7 +1,11 @@
+/**
+ *Submitted for verification at BscScan.com on 2020-09-22
+*/
+// SPDX-License-Identifier: MIT
 pragma solidity 0.6.12;
 
 
-//
+// 
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -27,7 +31,7 @@ contract Context {
     }
 }
 
-//
+// 
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -99,7 +103,7 @@ contract Ownable is Context {
     }
 }
 
-//
+// 
 interface IBEP20 {
     /**
      * @dev Returns the amount of tokens in existence.
@@ -195,7 +199,7 @@ interface IBEP20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-//
+// 
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -382,7 +386,7 @@ library SafeMath {
     }
 }
 
-//
+// 
 /**
  * @dev Collection of functions related to the address type
  */
@@ -541,7 +545,7 @@ library Address {
     }
 }
 
-//
+// 
 /**
  * @dev Implementation of the {IBEP20} interface.
  *
@@ -866,7 +870,7 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
     // Which is copied and modified from COMPOUND:
     // https://github.com/compound-finance/compound-protocol/blob/master/contracts/Governance/Comp.sol
 
-    /// @notice A record of each accounts delegate
+    /// @dev A record of each accounts delegate
     mapping (address => address) internal _delegates;
 
     /// @notice A checkpoint for marking number of votes from a given block
@@ -890,7 +894,7 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
     /// @notice A record of states for signing / validating signatures
     mapping (address => uint) public nonces;
 
-    /// @notice An event thats emitted when an account changes its delegate
+      /// @notice An event thats emitted when an account changes its delegate
     event DelegateChanged(address indexed delegator, address indexed fromDelegate, address indexed toDelegate);
 
     /// @notice An event thats emitted when a delegate account's vote balance changes
@@ -901,17 +905,17 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
      * @param delegator The address to get delegatee for
      */
     function delegates(address delegator)
-    external
-    view
-    returns (address)
+        external
+        view
+        returns (address)
     {
         return _delegates[delegator];
     }
 
-    /**
-     * @notice Delegate votes from `msg.sender` to `delegatee`
-     * @param delegatee The address to delegate votes to
-     */
+   /**
+    * @notice Delegate votes from `msg.sender` to `delegatee`
+    * @param delegatee The address to delegate votes to
+    */
     function delegate(address delegatee) external {
         return _delegate(msg.sender, delegatee);
     }
@@ -933,7 +937,7 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
         bytes32 r,
         bytes32 s
     )
-    external
+        external
     {
         bytes32 domainSeparator = keccak256(
             abi.encode(
@@ -974,9 +978,9 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
      * @return The number of current votes for `account`
      */
     function getCurrentVotes(address account)
-    external
-    view
-    returns (uint256)
+        external
+        view
+        returns (uint256)
     {
         uint32 nCheckpoints = numCheckpoints[account];
         return nCheckpoints > 0 ? checkpoints[account][nCheckpoints - 1].votes : 0;
@@ -990,9 +994,9 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
      * @return The number of votes the account had as of the given block
      */
     function getPriorVotes(address account, uint blockNumber)
-    external
-    view
-    returns (uint256)
+        external
+        view
+        returns (uint256)
     {
         require(blockNumber < block.number, "CAKE::getPriorVotes: not yet determined");
 
@@ -1028,7 +1032,7 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
     }
 
     function _delegate(address delegator, address delegatee)
-    internal
+        internal
     {
         address currentDelegate = _delegates[delegator];
         uint256 delegatorBalance = balanceOf(delegator); // balance of underlying CAKEs (not scaled);
@@ -1065,7 +1069,7 @@ contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
         uint256 oldVotes,
         uint256 newVotes
     )
-    internal
+        internal
     {
         uint32 blockNumber = safe32(block.number, "CAKE::_writeCheckpoint: block number exceeds 32 bits");
 

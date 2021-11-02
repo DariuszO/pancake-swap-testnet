@@ -1,0 +1,41 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"build/tokens/BAKEToken.sol": "Address"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"build/tokens/BAKEToken.sol": {
+			"keccak256": "0x72641ce726ebf0e592de90435a189807525cffdd76d6677c8e61cb7cdc677aac",
+			"urls": [
+				"bzz-raw://707508244b4347f60bdae0c3542d00a22077fc08a89395bb4736649f39b10a0c",
+				"dweb:/ipfs/QmWizrAL1RKWNEJhgqFNkLj1K1PU5sueN6yF4TVwNUCZZd"
+			]
+		}
+	},
+	"version": 1
+}
