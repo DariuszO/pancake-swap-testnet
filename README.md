@@ -54,6 +54,16 @@ sol-merger pancake-swap-periphery/contracts/PancakeRouter01.sol ./build
 sol-merger pancake-swap-periphery/contracts/PancakeRouter.sol ./build
 ```
 
+### Prepare other tokens in build/tokens(compile->deploy, writedown addresses + hash)
+
++ New File: `ETHToken.sol` => Copy source from https://bscscan.com/address/0x2170ed0880ac9a755fd29b2688956bd959f933f8#code
++ New File: `BUSDToken.sol` => Copy source from https://bscscan.com/address/0xe9e7cea3dedca5984780bafc599bd69add087d56#code
++ New File: `XRPToken.sol` => Copy source from https://bscscan.com/address/0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe#code
++ New File: `DAIToken.sol` => Copy source from https://bscscan.com/address/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3#code
++ New File: `CAKEToken.sol` => Copy source from https://bscscan.com/address/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82#code
++ New File: `USDTToken.sol` => Copy source from https://bscscan.com/address/0x55d398326f99059ff775485246999027b3197955#code
++ New File: `BAKEToken.sol` => Copy source from https://bscscan.com/address/0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5#code
+
 ### Deploy `WBNB`, `PancakeFactory` and `PancakeRouter`
 
 - Access: https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.5.16+commit.9c3226ce.js
@@ -147,10 +157,10 @@ yarn build
 
 **Tokens**
 
-- BAKE Token: 0xb289b361a633A9D2b0B39BAE76BB458d83f58CEC
-- BUSD Token: 0xE0dFffc2E01A7f051069649aD4eb3F518430B6a4
-- ETH Token:  0xE282a15DBad45e3131620C1b8AF85B7330Cb3b4B
-- USDT Token: 0x7afd064DaE94d73ee37d19ff2D264f5A2903bBB0
-- XRP Token:  0x3833B175Af1900b457cf83B839727AF6C9cF0bEe
-- DAI Token:  0x3Cf204795c4995cCf9C1a0B3191F00c01B03C56C
-- CAKE Token: 0xB8F5B50ed77596b5E638359d828000747bb3dd89
+- BAKE Token: 0x0503621621F02aD52c2A6148DbA3aB8dCD61b400	HASH:	0xd4e71861df3ecdab4bdac737dc4534439353af2d2740203cf832a7b22b332bab
+- BUSD Token: 0xA46f60e4448C62cAF6dC304aD68084b7F6c9A114	HASH:	0xc8f3baa2acc840dfd7999a0747e0f5c4a9b046f16f61642a9fdcd051b0c40596
+- ETH Token:  0x7ef6824AfF39Bd876b238a9a699C321bA6F17256	HASH:	0xd7a4c59577b368978c2e5da3b9b777026edc50fad01c0362257b85e99557a982
+- USDT Token: 0xBF426F8C2f46A2b6b5F26253bBFd0F8811A0E58F	HASH:	0xb1ae40f9f1524c43e971ba7d03207e784b033d9abad897b63fe9bbdeeef876c2
+- XRP Token:  0x813c9A46CEa0E9482887cF3EfC53B4d7B73188Fd	HASH:	0x9aebfba852e9014e5874f0c295400f18ef4a797b8c89121e10b1fc8a13757de8
+- DAI Token:  0xBD3E3Ef3e06c97eb6c0ccA723Ee3Ee7D07d8dE80	HASH:	0x998153425a2d06e8c5029148f361b084d89e02abfe4f021a999758c0cea68f00
+- CAKE Token: 0xC642e73195975Cf5e5697f3F73bb2Fa8C2f032a1	HASH:	0x677be86d803085f790f2f4248f9a2934ae5d080b34df31e30413ddd37bac5083
