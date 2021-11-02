@@ -17,6 +17,7 @@ export const ETH = new Token(ChainId.BSCTESTNET, '0x7ef6824AfF39Bd876b238a9a699C
 
 
 const WETH_ONLY: ChainTokenList = {
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
   [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
 }
 
