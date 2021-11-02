@@ -525,22 +525,22 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"build/tokens/BUSDToken.sol": "BEP20Token"
+			"build/tokens/BTCBToken.sol": "BEP20Token"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"build/tokens/BUSDToken.sol": {
-			"keccak256": "0x02b23521139a348d4028cf413a5549429b09fd85deae8e24cba6d6ede8d028ef",
+		"build/tokens/BTCBToken.sol": {
+			"keccak256": "0x7407f590b21c003c520bd2f622075739ab17cdf43f4a819a3878706900a62b66",
 			"urls": [
-				"bzz-raw://9836b86516df8cd89d30d88fd2d5dbde5d2cbe7fc614e5f9c2642437112ef765",
-				"dweb:/ipfs/QmRcVqvdHMz1fkfLmKXNDSYPPAyR9RvfLkkeUhk8xqiHoj"
+				"bzz-raw://16b228ba81f17b71c5494a9d45d81f375dc861f983b46ffb571bc4f47139c645",
+				"dweb:/ipfs/Qmawe7BAsfZY92p9a8uAcajGgE14wwZRo4J6yFhNUdZb5V"
 			]
 		}
 	},
