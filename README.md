@@ -74,6 +74,12 @@ sol-merger pancake-swap-periphery/contracts/PancakeRouter.sol ./build
 + Compiler tab => Select compiler: `v0.8.3+commit.8d00100c`
 + Deploy tab => Select `WBNB` -> Deploy
 
+#### Deploy MultiCall
+
++ New File: `MultiCall.sol` => Copy source from https://bscscan.com/address/0x1Ee38d535d541c55C9dae27B12edf090C608E6Fb#code
++ Compiler tab => Select compiler: `v0.8.3+commit.8d00100c`
++ Deploy tab => Select `MultiCall` -> Deploy
+
 #### Deploy PancakeFactory
 
 + New File: `PancakeFactory.sol` => Copy source from `./build/PancakeFactory.sol`
