@@ -1,19 +1,19 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap-libs/sdk'
 
-export const ROUTER_ADDRESS = '0x81Ed9A1c1f422764Be220BED697132674e147D85'
+export const ROUTER_ADDRESS = '0x9D7f74d0C41E726EC95884E0e97Fa6129e3b5E99'
 
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const CAKE = new Token(ChainId.BSCTESTNET, '0x995852Facc5a9C4a3EC0aDA13CE21F4DA39A8448', 18, 'CAKE', 'PancakeSwap Token')
-export const WBNB = new Token(ChainId.BSCTESTNET, '0xDC847aFEf098a9A516Ce5220B0F0f83E7D698834', 18, 'WBNB', 'Wrapped BNB')
-export const DAI = new Token(ChainId.BSCTESTNET, '0xBD3E3Ef3e06c97eb6c0ccA723Ee3Ee7D07d8dE80', 18, 'DAI', 'Dai Stablecoin')
-export const BUSD = new Token(ChainId.BSCTESTNET, '0xA46f60e4448C62cAF6dC304aD68084b7F6c9A114', 18, 'BUSD', 'Binance USD')
-export const BTCB = new Token(ChainId.BSCTESTNET, '0xC61b98C4a9A0f3D564B4D4E71F24Fba464C167a4', 18, 'BTCB', 'Binance-Peg BTC Token')
-export const USDT = new Token(ChainId.BSCTESTNET, '0xBF426F8C2f46A2b6b5F26253bBFd0F8811A0E58F', 18, 'USDT', 'Tether USD')
-export const ETH = new Token(ChainId.BSCTESTNET, '0x7ef6824AfF39Bd876b238a9a699C321bA6F17256', 18, 'ETH', 'Binance-Peg Ethereum Token')
+export const CAKE = new Token(ChainId.BSCTESTNET, '0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005', 18, 'CAKE', 'PancakeSwap Token')
+export const WBNB = new Token(ChainId.BSCTESTNET, '0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8', 18, 'WBNB', 'Wrapped BNB')
+export const DAI = new Token(ChainId.BSCTESTNET, '0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005', 18, 'DAI', 'Dai Stablecoin')
+export const BUSD = new Token(ChainId.BSCTESTNET, '0x358AA13c52544ECCEF6B0ADD0f801012ADAD5eE3', 18, 'BUSD', 'Binance USD')
+// export const BTCB = new Token(ChainId.BSCTESTNET, '0xC61b98C4a9A0f3D564B4D4E71F24Fba464C167a4', 18, 'BTCB', 'Binance-Peg BTC Token')
+export const USDT = new Token(ChainId.BSCTESTNET, '0xd9145CCE52D386f254917e481eB44e9943F39138', 18, 'USDT', 'Tether USD')
+export const ETH = new Token(ChainId.BSCTESTNET, '0xDA0bab807633f07f013f94DD0E6A4F96F8742B53', 18, 'ETH', 'Binance-Peg Ethereum Token')
 
 
 const WETH_ONLY: ChainTokenList = {
