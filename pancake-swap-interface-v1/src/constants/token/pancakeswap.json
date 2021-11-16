@@ -69,7 +69,7 @@
     {
       "name": "Dai Token",
       "symbol": "DAI",
-      "address": "0xBD3E3Ef3e06c97eb6c0ccA723Ee3Ee7D07d8dE80",
+      "address": "0x0fC5025C764cE34df352757e82f7B5c4Df39A836",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3.png"
